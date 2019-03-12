@@ -59,13 +59,19 @@
      <div class="container">
        <div class="row">
          <div class="col-md-3">
-           <a href="#" class="text-white btn btn-primary btn-block" type="button"> <i class="fas fa-plus"></i> Add Post</a>
+            <a href="#" class="text-white btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#post-modal">
+                <i class="fas fa-plus"></i> Add Post
+            </a>
          </div>
          <div class="col-md-3">
-           <a href="#" class="btn btn-success btn-block text-white" type="button"><i class="fas fa-plus"></i> Add Category</a>
+           <a href="#" class="btn btn-success btn-block text-white" type="button" data-target="#category-modal" data-toggle="modal">
+               <i class="fas fa-plus"></i> Add Category
+          </a>
          </div>
          <div class="col-md-3">
-           <a href="#" type="button" class="btn btn-warning btn-block"><i class="fas fa-plus"></i> Add User</a>
+            <a href="#" type="button" class="btn btn-warning btn-block" data-target="#user-modal" data-toggle="modal">
+                <i class="fas fa-plus"></i> Add User
+            </a>
          </div>
        </div>
      </div>
@@ -207,7 +213,7 @@
     </div>
   </footer>
 
-  
+
   <!-- Scripts -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
