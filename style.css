@@ -1,9 +1,9 @@
 
 .table-bordered th.borderR-remove,
 .table .thead-dark th.borderR-remove {
-  border-right: none;
+    border-right: none;
 }
 .table .thead-dark th.borderL-remove,
 .table-bordered th.borderL-remove {
-  border-left: none;
+    border-left: none;
 }
