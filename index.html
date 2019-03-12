@@ -197,11 +197,11 @@
      </div>
    </div>
 <!--Footer section -->
-  <footer class="p-4 mt-5 bg-dark text-white">
+  <footer class="p-5 mt-5 bg-dark text-white">
     <div class="container">
       <div class="row">
          <div class="col">
-           
+           <p class="text-center lead">Copyright &copy; <span id="year"></span> Blogen</p>
          </div>
       </div>
     </div>
@@ -215,6 +215,11 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script>
 // put custom js here
+ $(document).ready(function(){
+    // year plugin 
+    $('#year').text(new Date().getFullYear());
+
+  });
 </script>
 </body>
 </html>
