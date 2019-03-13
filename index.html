@@ -284,7 +284,42 @@
        </div>
      </div>
    </div>
-
+<!--Add category modal -->
+   <div id="user-modal" class="modal fade">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header bg-warning text-white p-3">
+           <h5 class="modal-title">Add User</h5>
+           <button class="close" data-dismiss="modal">
+             <span>&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <form>
+             <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control">
+             </div>
+             <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control">
+             </div>
+             <div class="form-group">
+               <label for="pass">Password</label>
+               <input type="password" id="pass" class="form-control">
+             </div>
+             <div class="form-group">
+              <label for="confirm">Confirm Password</label>
+              <input type="password" id="confirm" class="form-control">
+            </div>
+           </form>
+         </div>
+         <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Save Changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
   <!-- Scripts -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
