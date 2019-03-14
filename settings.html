@@ -1,0 +1,148 @@
+<!--profile page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 4 Dashboard Theme</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">Blogen</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsible">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a href="dashboard.html" class="nav-link">Dashboard</a>
+               </li>
+             <li class="nav-item">
+                  <a href="posts.html" class="nav-link">Posts</a>
+               </li>  
+               <li class="nav-item">
+                  <a href="categories.html" class="nav-link">Categories</a>
+               </li>
+               <li class="nav-item">
+                  <a href="users.html" class="nav-link">Users</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Welcome Lampros</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a href="profile.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile</a>
+                  <a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                 </i><a href="logout.html" class="nav-link"> <i class="fas fa-user-times"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    </nav>
+    <!--Main Header -->
+    <div class="bg-primary text-white">
+      <div class="container">
+         <div class="row p-2">        
+           <i class="fas fa-cog fa-3x mr-2"></i> <h1>Settings</h1>
+         </div>
+      </div>
+    </div>
+  <!--Actions Section -->
+   <div id="action-section--profile" class="py-4">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-3">
+            <a href="index.html" class="btn btn-light btn-block" type="button">
+              <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </a>
+         </div>
+         <div class="col-md-3">
+           <a href="#" class="btn btn-success btn-block text-white" type="button">
+              <i class="fas fa-check"></i> Save Changes 
+          </a>
+         </div>
+
+       </div>
+     </div>
+   </div>
+   <!--Edit section -->
+   <div class="container">
+     <div class="row">
+       <div class="col-md-9">
+        <div id="edit-profile-card" class="card">
+           <div class="card-content">
+              <div class="card-header">
+                 <h3>Edit Profile</h3>
+              </div>
+           <div class="card-body">
+             <form>
+               <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Lampros Hatzinikolaou">
+               </div>
+               <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="laza@yahoo.gr">
+               </div>            
+
+            <div class="form-group">
+               <label for="textarea">Bio</label>
+               <textarea  id="textarea" name="editor1" class="form-control">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde at fugiat explicabo temporibus, tempora animi sunt iusto quod beatae optio veritatis velit natus odit error! Possimus esse quisquam quibusdam eveniet autem! Minus dolore quisquam nemo similique doloribus perspiciatis tempore.
+               </textarea>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+        </div>
+      </div>
+    </div> <!--end of card -->
+  </div>
+  <div class="col-md-3">
+    <img src="img/avatar.png" alt="avatar picture" class="img-fluid">
+    <button class="btn btn-primary btn-block mt-2">Edit Image</button>
+    <button class="btn btn-danger btn-block">Delete Image</button>
+  </div>
+  </div>
+</div>
+<!--Footer section -->
+  <footer class="p-5 mt-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+         <div class="col">
+           <p class="text-center lead">Copyright &copy; <span id="year"></span> Blogen</p>
+         </div>
+      </div>
+    </div>
+  </footer>
+<!-- Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+<script>
+// put custom js here
+ $(document).ready(function(){
+
+    // get current year plugin
+    $('#year').text(new Date().getFullYear());
+    
+    // add ck editor plugin
+    CKEDITOR.replace( 'editor1' );
+
+  });
+</script>
+</body>
+</html>
