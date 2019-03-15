@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 4 Dashboard Theme</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">Blogen</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsible">
+            <ul class="navbar-nav">
+               <li class="nav-item ">
+                  <a href="index.html" class="nav-link">Dashboard</a>
+               </li>
+             <li class="nav-item">
+                  <a href="posts.html" class="nav-link">Posts</a>
+               </li>  
+               <li class="nav-item active">
+                  <a href="categories.html" class="nav-link">Categories</a>
+               </li>
+               <li class="nav-item">
+                  <a href="users.html" class="nav-link">Users</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Welcome Lampros</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a href="profile.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile</a>
+                  <a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                 </i><a href="admin.html" class="nav-link"> <i class="fas fa-user-times"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    </nav>
+    <!--Main Header -->
+    <div class="bg-success text-white">
+      <div class="container">
+         <div class="row p-2">        
+           <i class="fas fa-folder fa-3x mr-2"></i> <h1>Categories</h1>
+         </div>
+      </div>
+    </div>
+  <!--Search Section -->
+   <div id="search-section" class="py-4">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6 ml-auto">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Posts...">
+              <div class="input-group-append">
+                <button class="btn btn-success text-white">Search</button>
+              </div>
+            </div>
+            </a>
+         </div>
+ 
+       </div>
+     </div>
+   </div>
+  <!-- table categories section  -->
+   <div id="categories-section" class="py-4">
+     <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="table-heading p-2 text-center m-0">Latest Categories</h4>                
+                    </div>
+                    <table class="table table-striped">
+                          <thead class="thead-dark">
+                              <tr>
+                                 <th scope="col">#</th>
+                                 <th scope="col">Category</th>
+                                 <th scope="col" class="borderR-remove">Date</th>
+                                 <th scope="col" class="borderL-remove"></th>
+                              </tr>
+                          </thead>
+                         <tbody>
+                            <tr>
+                               <td>1</td>
+                               <td>Front End Development</td>
+                               <td>May 10 2018</td>
+                               <td>
+                                  <a href="details.html" class="btn btn-secondary">
+                                     <i class="fas fa-angle-double-right"></i> Details
+                                  </a>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td>2</td>
+                               <td>Web Operations</td>
+                               <td>May 11 2018</td>
+                               <td>
+                                  <a href="details.html" class="btn btn-secondary">
+                                     <i class="fas fa-angle-double-right"></i> Details
+                                  </a>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td>3</td>
+                                <td>Back End Development</td>
+                                <td>May 12 2018</td>
+                                <td>
+                                   <a href="details.html" class="btn btn-secondary">
+                                      <i class="fas fa-angle-double-right"></i> Details
+                                   </a>
+                                </td>
+                             </tr>
+                             <tr>
+                               <td>4</td>
+                               <td>Dev Ops</td>
+                               <td>May 13 2018</td>
+                               <td>
+                                  <a href="details.html" class="btn btn-secondary">
+                                     <i class="fas fa-angle-double-right"></i> Details
+                                  </a>
+                               </td>
+                             </tr>
+                        </tbody>
+                    </table>
+                  </div>
+               </div>
+            </div>
+         </div>     
+      </div>
+   </div>
+
+<!--Modals -->
+
+<!--Add post modal -->
+   <div id="post-modal" class="modal fade">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header bg-primary text-white">
+           <h5 class="modal-title">Add Post</h5>
+           <button class="close" data-dismiss="modal">
+             <span>&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <form>
+             <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title">
+             </div>
+             <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category">
+                  <option value="web-development">Web Development</option>
+                  <option value="dev-ops">DevOps</option>
+                  <option value="business">Business</option>
+                  <option value="health">Health</option>
+                </select>
+             </div>
+             <div class="form-group">
+                <label for="upload">Upload Image</label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="upload">Choose file</label>
+                </div>
+                <small>Max Size 3mbs</small>
+             </div>
+             <div class="form-group">
+                <label for="textarea">Body</label>
+                <textarea  id="textarea" name="editor1" class="form-control"></textarea>
+             </div>
+           </form>
+         </div>
+         <div class="modal-footer">
+           <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
+<!--Add category modal -->
+   <div id="category-modal" class="modal fade">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header bg-success text-white p-3">
+          <h5 class="modal-title">Add Category</h4>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+           <div class="form-group">
+             <label for="title">Title:</label>
+             <input type="text" id="title" class="form-control">
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button class="btn btn-success text-white" data-dismiss="modal">
+             Save Changes
+           </button>
+         </div>
+       </div>
+     </div>
+   </div>
+<!--Add category modal -->
+   <div id="user-modal" class="modal fade">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header bg-warning text-white p-3">
+           <h5 class="modal-title">Add User</h5>
+           <button class="close" data-dismiss="modal">
+             <span>&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <form>
+             <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control">
+             </div>
+             <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control">
+             </div>
+             <div class="form-group">
+               <label for="pass">Password</label>
+               <input type="password" id="pass" class="form-control">
+             </div>
+             <div class="form-group">
+              <label for="confirm">Confirm Password</label>
+              <input type="password" id="confirm" class="form-control">
+            </div>
+           </form>
+         </div>
+         <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Save Changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
+  <!-- Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+<script>
+// put custom js here
+ $(document).ready(function(){
+
+    // get current year plugin
+    $('#year').text(new Date().getFullYear());
+    
+    // add ck editor plugin
+    CKEDITOR.replace( 'editor1' );
+
+  });
+</script>
+</body>
+</html>
