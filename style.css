@@ -1,3 +1,6 @@
+body {
+    min-width: 343px;
+}
 #action-section--profile {
     background-color: #F8F9FA;
 }
